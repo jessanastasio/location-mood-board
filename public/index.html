@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/p5.min.js" integrity="sha512-b/htz6gIyFi3dwSoZ0Uv3cuv3Ony7EeKkacgrcVg8CMzu90n777qveu0PBcbZUA7TzyENGtU+qZRuFAkfqgyoQ==" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header"> 
+        <h1 class="title">Mood Board</h1>
+        <ul>
+          <li><a class="nav-link" href="/">enter your mood</a></li>
+          <li><a class="nav-link" href="/logs/index.html">see past moods</a></li>
+        </ul>
+      </div>
+      
+      <div class="coords-container">
+        <div class="spinner"></div>
+
+        <div class="coords round-corners">
+          latitude: <span id="latitude"></span>&deg;</br>
+          longitude: <span id="longitude"></span>&deg;
+        </div>
+    
+        <div id="video" class="video"></div>
+
+        <div class="input">
+          <label class="mood-label" for="mood">how does this location make you feel? ✨</label>
+          <input class="mood-input" id="mood"/>
+          <button class="mood-button round-corners" id="submit" disabled>
+            Submit your location data
+          </button>
+        </div>
+      </div>
+
+      <div class="toast"><p>Your mood has been inputted to the database!</p></div>
+    </div>
+    <script src="sketch.js"></script>
+  </body>
+</html>
