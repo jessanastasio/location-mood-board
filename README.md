@@ -4,7 +4,7 @@ a super basic vanilla js/css app to test out the Navigator.geolocation web api! 
 
 inspired by Joey Lee's selfie app demo https://github.com/joeyklee/data-selfie-app
 
-# to try it out
+# try it out
 
 clone this repo, run `node index.js` and hit `localhost:3000` in the browser!
 
